@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+        <title>admin_login</title>
+</head>
+<body>
+    <style>
+        
+        body
+        {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color:black;
+            background-size: cover;
+            overflow: hidden;
+        
+        }
+        .btn
+        {   
+            width: 100%;
+            background: none;
+            border: 2px solid #000400;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+            
+        }
+        .btn2
+        {   
+            width: 10%;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            padding-top: 10px;
+            margin: 550px -210px;
+            
+        }
+ 
+      
+        
+        .login
+        {
+            width: 290;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 30px;
+            background-color: rgb(33, 29, 33);
+            color: white;
+            border: 1px solid #000400;  
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+        .textbox
+        {
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid #000400;
+        }
+        .textbox i
+        {
+            width: 26px;
+            float: left;
+            text-align: center;
+        }
+        .textbox input
+        {
+            border: none;
+            outline: none;
+            background: none;
+            color: white;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+        }
+        .admin_name h1
+        {
+            float: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            align-items: center;
+            font-size: 50px;
+            color: white;
+            padding-left: 600px;
+            padding-top: 150px;
+            
+        }
+        .btn:hover{background-color:black;}
+        .btn2:hover{background-color:rgb(22, 21, 21);}
+        .textbox:hover{background-color:black;}
+    </style>
+
+
+    <div class="admin_name">
+        <h1>Admin Login</h1>
+    </div>
+
+    <div class="login">
+        <form method="post">
+            <div class="msg">{{ msg }}</div>
+            <div class="textbox">
+              <input type="text" placeholder="Username" name="adminname" value="" required>
+            </div>
+            <div class="textbox">
+              <input type="password" placeholder="Password" name="password" value="" required>
+            </div>
+                <input class="btn" type="submit" name="" value="Sign in">
+        </form>
+    </div>
+      <a href="{{url_for('login')}}">
+        <input class="btn2" type="button" name="" value="User Login">
+      </a>
+    
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

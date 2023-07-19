@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+        <title>user_dashboard</title>
+</head>
+<body>
+    <style>
+          body
+        {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color:black;
+            background-size: cover;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        nav
+        {   
+            width: 100%;
+            height: 55px;
+            /*background-color: rgb(33, 29, 33);*/
+            overflow: hidden;
+        }
+        ul
+        {
+            padding:0;
+            padding-right: 40px;
+            background: rgb(33, 29, 33);
+            list-style: none;
+
+        }
+        li
+        {
+            float: right;
+        }
+        nav a
+        {
+            width: 100%;
+            display: block;
+            padding: 12px 16px;
+            font-size: larger;
+            background-color: rgb(33, 29, 33);
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            float: left;
+            border: 1px solid red;
+            border-radius: 5%;
+        }
+        .search
+        {
+            float: inline-start;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            font-size: 25px;
+            padding-left: 865px;
+            padding-top: 1px;
+            
+        }
+
+        .appname h1
+        {
+            float: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            color:red;
+            padding-left: 40px;
+            padding-top: 20px;
+            
+        }
+        
+        .containers
+        {
+            width: 100%;
+            background: none;
+            color: white;
+            padding: 0px 500px;
+            font-size: 10px;
+            cursor: pointer;
+            margin: 12px 0;
+            
+        }
+    
+        .heading
+        {
+            font-size: 50px;
+            text-align: center;
+            padding-top: 10px;
+            color: beige;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }
+        
+        .containers form .details 
+        {
+            width: 100%;
+            background: none;
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            
+            cursor: pointer;
+            margin: 10px 0px;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: -10px;
+            align-items: center;
+        }
+        form .details .box
+        {
+            width: calc(100% / 2 -20px);
+            margin-bottom: 15px;
+            
+        }
+        .details .box .detail
+        {
+            display: block;
+            font-weight: 500;
+            font-family: serif;
+            margin-bottom: 10px;
+            padding: 1px 10px;
+            
+        }
+        .details .box input
+        {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid black;
+            background-color: whitesmoke;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            
+
+        }
+        .btn1 
+        {       
+            padding: 8px 20px;
+            border-radius: 30px;
+            width: 250px;
+            background: rgb(33, 29, 33);
+            border: 2px solid red;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 2px 100px;
+            height: fit-content;
+        }
+        .dashbordbox
+        {
+            width: 95%;
+            background-color:#510303;
+            margin: 40px;
+            border-radius: 20px;
+            padding: 20px;
+            color: rgb(251, 245, 245);
+            margin-top: 50px;
+
+        }
+        /*.btn1
+        {   
+            padding: 5px 100px;
+            border-radius: 30px;
+            width: 100px;
+            background: rgb(33, 29, 33);
+            border: 2px solid red;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px 150px;
+            height: fit-content;
+        }*/
+        .btn1:hover{background-color:black;}
+        .button:hover{background-color:black;}*/
+        nav a:hover{background:black;}
+        
+        .details h3
+        {
+            padding: 20px 15px;
+            color: white;
+            font-size: 25px;
+            margin: -20px 130px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .dbox2
+        {
+            background-color: #0f1111;
+            height: 280px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            
+        }
+        a 
+        {
+        text-decoration: none;
+        color:white;
+        }
+        .button
+        {
+            color: white;
+            background-color: #510303;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 25%;
+            margin-left: 37%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .search
+        {
+            float: right;
+            padding: left 20px;
+            margin:10px;
+            background-color: rgb(54, 28, 28);
+            width: 50%;
+            border-radius: 20px;
+            color:white;
+            padding:10px;
+
+        }
+        
+    </style>
+    <div class="appname">
+        <h1>SaveYourSeat</h1>
+       
+    </div>
+    
+    <nav>
+        <ul>
+            
+            <li><a href ="{{url_for('login')}}" onclick="return confirm('Are you sure?')"> Logout</a></li>
+            <li><a href ="/user_bookings/{{uid}}"> Bookings</a></li>
+           
+        </ul>
+    </nav>
+    <br><br>
+    <div>
+    <form autocomplete="off"><input style="margin-left: 81%; padding: 10px;" type="text" name="q" id="q" placeholder='Search...' onKeyUp="showResults(this.value)" />
+        <div id="result"></div>
+    </form>
+    </div>
+
+    {% for v in all_venue %}
+    <div class="dashbordbox">
+        <h4>{{v.venue_name}} </h4><h6>(Place: {{v.venue_place}} , Capacity: {{v.venue_capacity}})</h6>
+
+        <div class="container text-center">
+            <div class="row flex-nowrap" style="overflow-x: auto;">
+              
+            {% for s in all_show %}
+            {% if s.show_venue_id == v.venue_id %}
+                <div class="col-4 dbox2">
+                <h5><b>{{s.show_name}}</b></h5>
+                <h8>Rating: {{s.show_rating}}</h8>
+                <h8><br> {{s.show_tags}}</h8>
+                <h8><br>Date: {{s.show_date}}</h8>
+                <h8><br>Available Seat: {{s.show_available_seat}}</h8>
+                <h8><br>Time: {{s.show_time}}</h8>
+                <h8><br>Price: {{s.show_ticketprice}}</h8>
+                
+                {% if s.show_available_seat ==0 %}
+                <br>
+                <button type="button" style="margin-top: 20px;" class="btn btn-secondary btn-lg" disabled>Filled</button>
+                {% else %}
+                <div class="button"><a href="/booking_user/{{uid}}/{{s.show_id}}">Book</a></div> 
+                {% endif %}
+                </div>
+
+            {% endif %}
+            {% endfor %}
+
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+    <script>
+        var search_terms = {{ search|safe }};
+
+
+        function autocompleteMatch(input) {
+          if (input == '') {
+            return [];
+          }
+          var reg = new RegExp(input)
+          return search_terms.filter(function(term) {
+              if (term.match(reg)) {
+                return term;
+              }
+          });
+        }
+        
+        function showResults(val) {
+          res = document.getElementById("result");
+          res.innerHTML = '';
+          let list = '';
+          let terms = autocompleteMatch(val);
+          for (i=0; i<terms.length; i++) {
+            l=terms[i];
+            l=l.split('-')
+            l1="<h5>Show:<b>"+l[0]+"</b><h5>"
+            l2="<p>"+l[1]+"<p>"
+            l3="<p>Venue:"+l[2]+"<p>"                    
+            list += '<div class="search">' +l1+l2+l3 + '</div><br>';
+          }
+          res.innerHTML = list;
+        }
+    </script>  
+  
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
